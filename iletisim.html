@@ -36,7 +36,7 @@
       background-color: #00cc88;
       color: white;
       border: none;
-      cursor: not-allowed;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -48,11 +48,12 @@
   </div>
 
   <h1>Bizimlə Əlaqə</h1>
-  <form>
-    <input type="text" placeholder="Adınız"><br>
-    <input type="email" placeholder="E-poçt"><br>
-    <textarea rows="5" placeholder="Mesajınız"></textarea><br>
-    <button type="submit" disabled>Göndər (aktiv deyil)</button>
+
+  <form action="mailto:blackzerowbsite@gmail.com" method="POST" enctype="text/plain">
+    <input type="text" name="Ad" placeholder="Adınız" required><br>
+    <input type="email" name="Email" placeholder="E-poçt" required><br>
+    <textarea name="Mesaj" rows="5" placeholder="Mesajınız" required></textarea><br>
+    <button type="submit">Göndər</button>
   </form>
 </body>
 </html>
