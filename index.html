@@ -1,41 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="az">
 <head>
-  <meta charset="UTF-8">
-  <title>Baba'nın Sayfası</title>
+  <meta charset="UTF-8" />
+  <title>Baba'nın Ana Səhifəsi</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #101010;
-      color: #00ffcc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #e0f7fa;
       text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
     }
     .menu {
-      background-color: #222;
+      background-color: rgba(0, 0, 0, 0.5);
       padding: 15px 0;
       position: sticky;
       top: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
     }
     .menu a {
-      color: white;
+      color: #b2ebf2;
       text-decoration: none;
       margin: 0 20px;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 18px;
+      transition: color 0.3s ease;
     }
     .menu a:hover {
-      color: #00ffcc;
+      color: #00bcd4;
+    }
+    h1 {
+      font-size: 3.5em;
+      margin-bottom: 0.2em;
+      text-shadow: 0 2px 5px #000;
+    }
+    p {
+      font-size: 1.3em;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+      text-shadow: 0 1px 3px #000;
+    }
+    .btn {
+      background-color: #00bcd4;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      color: white;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,188,212,0.6);
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover {
+      background-color: #0097a7;
+      box-shadow: 0 6px 14px rgba(0,151,167,0.8);
+    }
+    footer {
+      margin-top: auto;
+      padding: 10px 0;
+      font-size: 0.9em;
+      color: #80deea;
+    }
+    .social {
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+    .social a {
+      color: #00bcd4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .buy-section {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: rgba(0, 188, 212, 0.2);
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,188,212,0.3);
+    }
+    .buy-section h2 {
+      margin-bottom: 15px;
+      text-shadow: 0 1px 2px #000;
+    }
+    .buy-button {
+      background-color: #009688;
+      color: white;
+      padding: 15px 35px;
+      font-size: 1.3em;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 6px 12px rgba(0,150,136,0.7);
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .buy-button:hover {
+      background-color: #00796b;
+      box-shadow: 0 8px 20px rgba(0,121,107,0.9);
     }
   </style>
 </head>
 <body>
+
   <div class="menu">
     <a href="index.html">Ana Səhifə</a>
     <a href="hakkimda.html">Haqqımda</a>
     <a href="iletisim.html">Əlaqə</a>
   </div>
 
-  <h1>Salam, bu Baba'nın sayfasıdır</h1>
-  <p>Saytımıza xoş gəldiniz!</p>
+  <h1>Salam, mən Baba</h1>
+  <p>
+    Bu mənim GitHub Pages üzərindəki şəxsi saytım.  
+    Burada proqramlaşdırma, web dizayn, texnologiya və öz maraqlarım barədə paylaşımlar olacaq.
+  </p>
+  <a href="hakkimda.html" class="btn">Daha çox öyrən</a>
+
+  <div class="social">
+    Instagram:  
+    <a href="https://www.instagram.com/hakaliyevbaba?utm_source=ig_web_button_share_sheet&igsh=MTZwY3Eyb2l0NncxZg==" target="_blank" rel="noopener noreferrer">
+      @hakaliyevbaba
+    </a>
+  </div>
+
+  <div class="buy-section">
+    <h2>Satınalma Bölməsi</h2>
+    <a href="https://www.black/satin-al" target="_blank" class="buy-button">
+      İndi Satın Al
+    </a>
+  </div>
+
+  <footer>
+    © 2025 Baba. Bütün hüquqlar qorunur.
+  </footer>
+
 </body>
 </html>
