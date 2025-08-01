@@ -5,10 +5,26 @@
   <title>Əlaqə</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial;
-      background-color: #f2f2f2;
-      padding: 30px;
+      background-color: #fff;
+      color: #222;
       text-align: center;
+    }
+    .menu {
+      background-color: #444;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+    }
+    .menu a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+    .menu a:hover {
+      color: #00aa88;
     }
     input, textarea {
       width: 300px;
@@ -20,14 +36,17 @@
       background-color: #00cc88;
       color: white;
       border: none;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #009966;
+      cursor: not-allowed;
     }
   </style>
 </head>
 <body>
+  <div class="menu">
+    <a href="index.html">Ana Səhifə</a>
+    <a href="hakkimda.html">Haqqımda</a>
+    <a href="iletisim.html">Əlaqə</a>
+  </div>
+
   <h1>Bizimlə Əlaqə</h1>
   <form>
     <input type="text" placeholder="Adınız"><br>
@@ -35,6 +54,5 @@
     <textarea rows="5" placeholder="Mesajınız"></textarea><br>
     <button type="submit" disabled>Göndər (aktiv deyil)</button>
   </form>
-  <p><a href="index.html">← Ana Səhifəyə qayıt</a></p>
 </body>
 </html>
